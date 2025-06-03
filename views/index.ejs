@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>SignSafe - Accueil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignSafe – Signature électronique pédagogique</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>🛡️ Bienvenue sur SignSafe</h1>
-        <p>Application pédagogique de signature électronique sécurisée.</p>
-        <a href="/sign" class="btn">Signer un document</a>
-        <a href="/verify" class="btn">Vérifier un document</a>
-        <a href="/history" class="btn">Voir l’historique</a>
+        <h1>🛡️ SignSafe</h1>
+        <p>Bienvenue sur <strong>SignSafe</strong>, une plateforme web à but pédagogique qui vous permet de découvrir et expérimenter la <strong>signature électronique</strong>.</p>
+        
+        <div class="buttons">
+            <a href="/sign" class="btn">🖋️ Signer un document</a>
+            <a href="/verify" class="btn">🔍 Vérifier un document</a>
+            <a href="/history" class="btn">📜 Historique</a>
+        </div>
+
         <hr>
-        <h3>🔎 Concepts pédagogiques :</h3>
-        <ul>
-            <li>📄 Signature = hash + identité + horodatage</li>
-            <li>🔐 HMAC = preuve d'intégrité et d’origine</li>
-            <li>🧪 Objectif : Comprendre, pas remplacer les signatures légales qualifiées</li>
-        </ul>
+
+        <section>
+            <h2>🎓 Objectif pédagogique</h2>
+            <ul>
+                <li>💡 Comprendre le concept de <strong>signature électronique</strong>.</li>
+                <li>🔐 Apprendre les notions de <strong>hachage, intégrité, identité</strong>.</li>
+                <li>📄 Découvrir le principe de <strong>non-répudiation</strong> d’un document numérique.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🔧 Comment ça fonctionne ?</h2>
+            <ol>
+                <li>Vous importez un document à signer (PDF ou texte).</li>
+                <li>Un <strong>hachage (SHA-256)</strong> du document est généré pour prouver son intégrité.</li>
+                <li>Une <strong>signature simulée</strong> est produite avec un identifiant (email) et une clé serveur.</li>
+                <li>Le document peut ensuite être <strong>vérifié</strong> pour détecter toute modification.</li>
+            </ol>
+        </section>
+
+        <footer>
+            <p>&copy; <%= new Date().getFullYear() %> SignSafe – Développé par Emman Mlmb | Projet pédagogique</p>
+        </footer>
     </div>
 </body>
 </html>
