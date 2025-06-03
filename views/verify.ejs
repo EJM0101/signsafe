@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vérifier un document - SignSafe</title>
+</head>
+<body>
+    <div class="container">
+        <h2>🔍 Vérifier un document signé</h2>
+        <form action="/verify" method="POST" enctype="multipart/form-data">
+            <label>Email utilisé pour la signature :</label><br>
+            <input type="email" name="email" required><br><br>
+            <label>Choisir un fichier :</label><br>
+            <input type="file" name="doc" required><br><br>
+            <button type="submit">Vérifier</button>
+        </form>
+    </div>
+</body>
+</html>

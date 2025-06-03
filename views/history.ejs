@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historique - SignSafe</title>
+</head>
+<body>
+    <div class="container">
+        <h2>🕘 Historique des signatures</h2>
+        <ul>
+        <% list.forEach(sig => { %>
+            <li><strong><%= sig.email %></strong> - <%= sig.filename %> - <%= sig.timestamp %></li>
+        <% }) %>
+        </ul>
+        <a href="/">Retour</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signer un document - SignSafe</title>
+</head>
+<body>
+    <div class="container">
+        <h2>🖋️ Signer un document</h2>
+        <form action="/sign" method="POST" enctype="multipart/form-data">
+            <label>Email :</label><br>
+            <input type="email" name="email" required><br><br>
+            <label>Choisir un fichier (PDF/TXT) :</label><br>
+            <input type="file" name="doc" accept=".pdf,.txt" required><br><br>
+            <button type="submit">Signer</button>
+        </form>
+    </div>
+</body>
+</html>
